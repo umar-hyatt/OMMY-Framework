@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/UltimateMenus/DemoScenes/DemoWithMainMenu.unity
+    guid: 98545f1cbc8429a4b8f4b9783bdb6d2b
+  - enabled: 0
+    path: Assets/UltimateMenus/DemoScenes/DemoWithPause.unity
+    guid: ce332b1ea3953c2408e9dd82d347834d
+  - enabled: 0
+    path: Assets/MarkLight/Examples/Scenes/GameMenuExample.unity
+    guid: f203ee12a8f0d9249adee9e7fd35868a
+  m_configObjects: {}
