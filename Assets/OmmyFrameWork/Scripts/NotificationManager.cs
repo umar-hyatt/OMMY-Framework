@@ -34,7 +34,7 @@ public class NotificationManager : MonoBehaviour
         //iOSNotificationCenter.RequestAuthorization(options);
 #elif UNITY_ANDROID
         // Request permission to send notifications on Android
-        AndroidNotificationCenter.RequestPermission();
+        //AndroidNotificationCenter.RequestPermission();
 #endif
     }
 
@@ -61,17 +61,12 @@ public class NotificationManager : MonoBehaviour
       //  iOSNotificationCenter.AddNotification(request);
         iOSNotificationCenter.ScheduleNotification(request);
 #elif UNITY_ANDROID
-        // Create the notification trigger
-        var trigger = new AndroidNotificationTimeIntervalTrigger {
-            TimeInterval = new TimeSpan(hour, minute, 0),
-            Repeating = true
-        };
 
         // Create the notification channel
         var channel = new AndroidNotificationChannel {
             Id = "daily_notification_channel",
             Name = "Daily Notification",
-            Importance = Importance.Default,
+            Importance = Importance.High,
             Description = "Daily reminder to take a break"
         };
         AndroidNotificationCenter.RegisterNotificationChannel(channel);
@@ -82,7 +77,6 @@ public class NotificationManager : MonoBehaviour
             Text = message,
             SmallIcon = "notification_icon",
             LargeIcon = "app_icon",
-            ChannelId = channel.Id,
             FireTime = DateTime.Now.AddHours(hour).AddMinutes(minute)
         };
 
