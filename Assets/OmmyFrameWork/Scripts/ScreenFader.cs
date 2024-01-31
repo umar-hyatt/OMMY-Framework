@@ -6,10 +6,7 @@ public class ScreenFader : MonoBehaviour
 {
     public Image fadeOverlay;
     public float fadeDuration = 1.0f;
-
     private Coroutine currentFadeCoroutine;
-    private Coroutine waitAndStartFadeOutCoroutine;
-
     private void Start()
     {
         if (fadeOverlay == null)
@@ -21,24 +18,19 @@ public class ScreenFader : MonoBehaviour
             FadeIn();
         }
     }
-
-    // Call this function to start the fade-in process
     public void FadeIn()
     {
         StartFadeCoroutine(1.0f, 0.0f);
     }
-
-    // Call this function to start the fade-out process
     public void FadeOut()
     {
         StartFadeCoroutine(0.0f, 1.0f);
     }
 
-    // Call this function to start the fade-in and fade-out process
     public void FadeInOut()
     {
         StartFadeCoroutine(0.0f, 1.0f);
-        waitAndStartFadeOutCoroutine = StartCoroutine(WaitAndStartFadeOut());
+        StartCoroutine(WaitAndStartFadeOut());
     }
 
     private void StartFadeCoroutine(float startAlpha, float targetAlpha)
@@ -68,8 +60,8 @@ public class ScreenFader : MonoBehaviour
 
     IEnumerator WaitAndStartFadeOut()
     {
-        yield return new WaitForSeconds(fadeDuration);
+        //yield return new WaitForSeconds(fadeDuration);
+        yield return currentFadeCoroutine;
         StartFadeCoroutine(1.0f, 0.0f);
-        waitAndStartFadeOutCoroutine = null; // Reset the coroutine reference after starting a new one
     }
 }
