@@ -1,0 +1,385 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Void ZigZag.ZIRAnimateUI::Awake()
+extern void ZIRAnimateUI_Awake_mD78756B3B1297533ACEFA44E7AC1B6DF062B4926 (void);
+// 0x00000002 System.Void ZigZag.ZIRAnimateUI::Update()
+extern void ZIRAnimateUI_Update_mC922651C078E9871DDE3F5ABA603E80D047D5599 (void);
+// 0x00000003 System.Void ZigZag.ZIRAnimateUI::OnEnable()
+extern void ZIRAnimateUI_OnEnable_mA0161FC65B32F3499E5444AB11D8FEAF02F55F64 (void);
+// 0x00000004 System.Void ZigZag.ZIRAnimateUI::PlayAnimation()
+extern void ZIRAnimateUI_PlayAnimation_m04A9EF6E05C440B9FE440BC66C6C7C3194C8EA33 (void);
+// 0x00000005 System.Void ZigZag.ZIRAnimateUI::.ctor()
+extern void ZIRAnimateUI__ctor_mD97BF5E83FBFEFAE00CD204A993CC2FCD7A6103B (void);
+// 0x00000006 System.Void ZigZag.ZIRGlobalMusic::Awake()
+extern void ZIRGlobalMusic_Awake_m60A3D46333DF67DCB6AEB85AC7437162CC9BE888 (void);
+// 0x00000007 System.Void ZigZag.ZIRGlobalMusic::Start()
+extern void ZIRGlobalMusic_Start_mDA010FE9A43E4EFA46A5E472A72E1C04C6A2B70E (void);
+// 0x00000008 System.Void ZigZag.ZIRGlobalMusic::.ctor()
+extern void ZIRGlobalMusic__ctor_m7D72A71D210B5D0059D87E77ED7B0B235A722071 (void);
+// 0x00000009 System.Void ZigZag.ZIRLoadLevel::Start()
+extern void ZIRLoadLevel_Start_m1BC700DCF6E6012449DA92DB2173C19708A2CF86 (void);
+// 0x0000000A System.Void ZigZag.ZIRLoadLevel::LoadURL()
+extern void ZIRLoadLevel_LoadURL_m7E2885FB9CD2C18C7C524FA919616B82480B4F99 (void);
+// 0x0000000B System.Void ZigZag.ZIRLoadLevel::ExecuteLoadURL()
+extern void ZIRLoadLevel_ExecuteLoadURL_m389CA5693B324BE0311AB99E7026891C8CA676B9 (void);
+// 0x0000000C System.Void ZigZag.ZIRLoadLevel::LoadLevel()
+extern void ZIRLoadLevel_LoadLevel_m3CD2D1DA969935E6C8F917A149094DBD9CB1A7A9 (void);
+// 0x0000000D System.Void ZigZag.ZIRLoadLevel::ExecuteLoadLevel()
+extern void ZIRLoadLevel_ExecuteLoadLevel_m5A7C73D0569064BA782500593C5B5E807B27DB5F (void);
+// 0x0000000E System.Void ZigZag.ZIRLoadLevel::RestartLevel()
+extern void ZIRLoadLevel_RestartLevel_mB47B7E903FC50507EEE9DD8DEE44789C481C9A0D (void);
+// 0x0000000F System.Void ZigZag.ZIRLoadLevel::ExecuteRestartLevel()
+extern void ZIRLoadLevel_ExecuteRestartLevel_m3A074188151DA61A0ED67D09BF261FA66DCF9778 (void);
+// 0x00000010 System.Void ZigZag.ZIRLoadLevel::.ctor()
+extern void ZIRLoadLevel__ctor_m85447ECA617569451354E33D3C92EA0AF2442428 (void);
+// 0x00000011 System.Void ZigZag.ZIRSelectButton::OnEnable()
+extern void ZIRSelectButton_OnEnable_mEAEFEB2D498542C32037BEFB9D4BB5FBA427EA16 (void);
+// 0x00000012 System.Void ZigZag.ZIRSelectButton::.ctor()
+extern void ZIRSelectButton__ctor_mFAD7296244BF0B0587F97D1B880C11391402317F (void);
+// 0x00000013 System.Void ZigZag.ZIRToggleSound::Awake()
+extern void ZIRToggleSound_Awake_m53C5A4C02A588CAB8915FD0D4FD780B9ACE7BA60 (void);
+// 0x00000014 System.Void ZigZag.ZIRToggleSound::SetSound()
+extern void ZIRToggleSound_SetSound_mA70473DF98881F2BA1F8737E063625AD49A81CE6 (void);
+// 0x00000015 System.Void ZigZag.ZIRToggleSound::ToggleSound()
+extern void ZIRToggleSound_ToggleSound_m53515F0EE02B4247DE179D2DC8FB4A9AFF9EEF15 (void);
+// 0x00000016 System.Void ZigZag.ZIRToggleSound::StartSound()
+extern void ZIRToggleSound_StartSound_m8516F6F0C0CB82D849AA6D373F9F5DFFD58EF634 (void);
+// 0x00000017 System.Void ZigZag.ZIRToggleSound::.ctor()
+extern void ZIRToggleSound__ctor_mD1363854E1DB4BC279028A370E8FAA77331DB399 (void);
+// 0x00000018 System.Void Zigzag.ZIRBlock::Start()
+extern void ZIRBlock_Start_mCFE94B04D81FDADE6955BF4AB6C3ED420C3B5E33 (void);
+// 0x00000019 System.Void Zigzag.ZIRBlock::OnTriggerEnter(UnityEngine.Collider)
+extern void ZIRBlock_OnTriggerEnter_m7085F1C4B47BD1558C4D98A0358BBC72999866E4 (void);
+// 0x0000001A System.Void Zigzag.ZIRBlock::.ctor()
+extern void ZIRBlock__ctor_mB58049AF125D0A0D0A1A064AC30863B3E912B3B3 (void);
+// 0x0000001B System.Void Zigzag.ZIRGameController::Awake()
+extern void ZIRGameController_Awake_mF2BAB4CBD6F9FEB1631672841DE22660118FEC92 (void);
+// 0x0000001C System.Void Zigzag.ZIRGameController::Start()
+extern void ZIRGameController_Start_mDA5D21AD04DA0D4A381804567EC49151ABD3222A (void);
+// 0x0000001D System.Void Zigzag.ZIRGameController::Update()
+extern void ZIRGameController_Update_m707E1540FE32A36D77BAC121373B26646DEE047A (void);
+// 0x0000001E System.Void Zigzag.ZIRGameController::LateUpdate()
+extern void ZIRGameController_LateUpdate_mF8E3CFFD63593F59A9F10EABE8521EC39DF5DAAD (void);
+// 0x0000001F System.Void Zigzag.ZIRGameController::createSection(System.Int32)
+extern void ZIRGameController_createSection_mEC3E29B22CAA9F6147FED4984564C8E15AEF32E4 (void);
+// 0x00000020 System.Void Zigzag.ZIRGameController::ChangeScore(System.Int32)
+extern void ZIRGameController_ChangeScore_m763EFEE2945ED184D6843850323D700F14D6AEEF (void);
+// 0x00000021 System.Void Zigzag.ZIRGameController::LevelUp()
+extern void ZIRGameController_LevelUp_mC1692D7CA52B1F18BA6ED721F9E17A135F823E4A (void);
+// 0x00000022 System.Void Zigzag.ZIRGameController::LevelUpEffect()
+extern void ZIRGameController_LevelUpEffect_m10EC64BB42DD3AA992B51195E4876E68FEDB7B9B (void);
+// 0x00000023 System.Void Zigzag.ZIRGameController::Pause()
+extern void ZIRGameController_Pause_mD919737E234834F3EAF0CFCBCB568DCCA9C35085 (void);
+// 0x00000024 System.Void Zigzag.ZIRGameController::Unpause()
+extern void ZIRGameController_Unpause_mCE144DE37AFB755A5628CAD5A0C1273F0551E16B (void);
+// 0x00000025 System.Collections.IEnumerator Zigzag.ZIRGameController::GameOver(System.Single)
+extern void ZIRGameController_GameOver_m6ADEEB6293E78A454CE7EBF0EAA2A8378B6E3C0B (void);
+// 0x00000026 System.Void Zigzag.ZIRGameController::Victory()
+extern void ZIRGameController_Victory_m71BA90CC0FEBAF6D9DD8898B7051E2D4E7D55934 (void);
+// 0x00000027 System.Void Zigzag.ZIRGameController::Restart()
+extern void ZIRGameController_Restart_m078B7569D7749E5EA49E40483EA323E4CB56EFCC (void);
+// 0x00000028 System.Void Zigzag.ZIRGameController::MainMenu()
+extern void ZIRGameController_MainMenu_m74AC12C5AABEE7D16732B064D9C050BA6A3295ED (void);
+// 0x00000029 System.Void Zigzag.ZIRGameController::SetPlayer(System.Int32)
+extern void ZIRGameController_SetPlayer_m251645CB9479EF062E1A7BC4326A19A50B4F539E (void);
+// 0x0000002A System.Void Zigzag.ZIRGameController::TurnPlayer()
+extern void ZIRGameController_TurnPlayer_mFC9E029D7FEECE2C79B08945B492B118D814C0AB (void);
+// 0x0000002B System.Void Zigzag.ZIRGameController::OnDrawGizmos()
+extern void ZIRGameController_OnDrawGizmos_m7D72699BEB152C41018C17EE4F09C7B202EAD447 (void);
+// 0x0000002C System.Void Zigzag.ZIRGameController::.ctor()
+extern void ZIRGameController__ctor_m6CA9CD9BB6CAFC62ECF58124CB187CAB0EF3082A (void);
+// 0x0000002D System.Void Zigzag.ZIRGameController/<GameOver>d__59::.ctor(System.Int32)
+extern void U3CGameOverU3Ed__59__ctor_m3FF56122D3D9132A124CD9F44DFB2CF60994F884 (void);
+// 0x0000002E System.Void Zigzag.ZIRGameController/<GameOver>d__59::System.IDisposable.Dispose()
+extern void U3CGameOverU3Ed__59_System_IDisposable_Dispose_m976A68D4196BC0D3457B447EF63A92D3E84DEF8B (void);
+// 0x0000002F System.Boolean Zigzag.ZIRGameController/<GameOver>d__59::MoveNext()
+extern void U3CGameOverU3Ed__59_MoveNext_mBC39A49F19EA2548F98AB717D5E1D64CE152651B (void);
+// 0x00000030 System.Object Zigzag.ZIRGameController/<GameOver>d__59::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CGameOverU3Ed__59_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m065E4E7694BB39932E3450F274F83F4D1B1BFFF5 (void);
+// 0x00000031 System.Void Zigzag.ZIRGameController/<GameOver>d__59::System.Collections.IEnumerator.Reset()
+extern void U3CGameOverU3Ed__59_System_Collections_IEnumerator_Reset_m04118A5BBB696632CFF4093434350033B54DB3F7 (void);
+// 0x00000032 System.Object Zigzag.ZIRGameController/<GameOver>d__59::System.Collections.IEnumerator.get_Current()
+extern void U3CGameOverU3Ed__59_System_Collections_IEnumerator_get_Current_m49255E2EAA83F25A947DA6B7EBDDA6CEE5A37C41 (void);
+// 0x00000033 System.Void Zigzag.ZIRLockRotation::Start()
+extern void ZIRLockRotation_Start_mA84E8D7263D176D853759B1B6B937CA1DF14C4DC (void);
+// 0x00000034 System.Void Zigzag.ZIRLockRotation::LateUpdate()
+extern void ZIRLockRotation_LateUpdate_m35CC6271AB537041456DB02A8EAEB2AF516148B5 (void);
+// 0x00000035 System.Void Zigzag.ZIRLockRotation::.ctor()
+extern void ZIRLockRotation__ctor_m5937CEAE6517B972D6EE66DE026626BCC0C26BAB (void);
+// 0x00000036 System.Void Zigzag.ZIRPlayer::Start()
+extern void ZIRPlayer_Start_m3D3302E5ED04B6CC6A748E4FF9A9F9A9805A16E0 (void);
+// 0x00000037 System.Void Zigzag.ZIRPlayer::Update()
+extern void ZIRPlayer_Update_m7660E32E9AC1BFAECC3A3EF558A4BBF3D0536CEE (void);
+// 0x00000038 System.Void Zigzag.ZIRPlayer::Die(System.Int32)
+extern void ZIRPlayer_Die_m7B0005E9F83D0872F5C6CED70EB0E0850B7071FD (void);
+// 0x00000039 System.Void Zigzag.ZIRPlayer::Victory()
+extern void ZIRPlayer_Victory_m085BA3334CF896CF3208178B7C9256A174618847 (void);
+// 0x0000003A System.Void Zigzag.ZIRPlayer::SetTurn(System.Single)
+extern void ZIRPlayer_SetTurn_mE06D3E3807CC9FEAE1B288DA08F5056CC7E6A2AF (void);
+// 0x0000003B System.Void Zigzag.ZIRPlayer::.ctor()
+extern void ZIRPlayer__ctor_m2C840BF7AF7B09B0D34D040278B96E9A719E42BF (void);
+// 0x0000003C System.Void Zigzag.ZIRPlaySound::Start()
+extern void ZIRPlaySound_Start_m48784DC0755BA4C40BD7603E92986EEDAE09CA54 (void);
+// 0x0000003D System.Void Zigzag.ZIRPlaySound::PlaySound()
+extern void ZIRPlaySound_PlaySound_mF46952002B78BEDBE0286E639C34724A6701B9D6 (void);
+// 0x0000003E System.Void Zigzag.ZIRPlaySound::PlaySound(System.Int32)
+extern void ZIRPlaySound_PlaySound_mE74ED268BA7AD38F4442B00FC17A26FDDE0AC41F (void);
+// 0x0000003F System.Void Zigzag.ZIRPlaySound::PlaySound(UnityEngine.AudioClip)
+extern void ZIRPlaySound_PlaySound_m41D7FA24FC3E1BB9E22788DF0EEF36A87E6BF899 (void);
+// 0x00000040 System.Void Zigzag.ZIRPlaySound::.ctor()
+extern void ZIRPlaySound__ctor_m51AA7FC4AE28B9D7CCCE44FE2C94F44C2AFA8B76 (void);
+// 0x00000041 System.Void Zigzag.ZIRRandomizeTransform::Start()
+extern void ZIRRandomizeTransform_Start_m1BED656A9D012A168C60B108326F4D9EACD726F0 (void);
+// 0x00000042 System.Void Zigzag.ZIRRandomizeTransform::.ctor()
+extern void ZIRRandomizeTransform__ctor_mBD987BD0CBF37ADAD210839A7E1187883317325C (void);
+// 0x00000043 System.Void Zigzag.ZIRRemoveAfterDistance::Start()
+extern void ZIRRemoveAfterDistance_Start_m087073C338456DF925723ADCB3FCDD230B2AA9AD (void);
+// 0x00000044 System.Void Zigzag.ZIRRemoveAfterDistance::Update()
+extern void ZIRRemoveAfterDistance_Update_m702755481FF17A85506BF8758CA84BE431DF9F39 (void);
+// 0x00000045 System.Void Zigzag.ZIRRemoveAfterDistance::.ctor()
+extern void ZIRRemoveAfterDistance__ctor_m2093831C47E86F24947CE404CFD088FF27AD3B0D (void);
+// 0x00000046 System.Void Zigzag.ZIRRemoveAfterTime::Update()
+extern void ZIRRemoveAfterTime_Update_m6E27A924773CA051F30550EB7A3D960A825E2AF8 (void);
+// 0x00000047 System.Void Zigzag.ZIRRemoveAfterTime::.ctor()
+extern void ZIRRemoveAfterTime__ctor_mAF7E84EBD1C032FAF0DA3519095E4A4C41701B5A (void);
+// 0x00000048 System.Void Zigzag.ZIRShop::Start()
+extern void ZIRShop_Start_m675ADEDE4344463793277A32FBFC346F726F9A92 (void);
+// 0x00000049 System.Void Zigzag.ZIRShop::UpdateItems()
+extern void ZIRShop_UpdateItems_m1E107B2D425DAA839E92606348E408BF66A635F2 (void);
+// 0x0000004A System.Void Zigzag.ZIRShop::BuyItem(System.Int32)
+extern void ZIRShop_BuyItem_mB9FB412FC3B4436C8D3FDB8E8B7FA4CBA30235E0 (void);
+// 0x0000004B System.Void Zigzag.ZIRShop::SelectItem(System.Int32)
+extern void ZIRShop_SelectItem_m7612F5D8810ABC870C2344899A4606426DF3FB0C (void);
+// 0x0000004C System.Void Zigzag.ZIRShop::.ctor()
+extern void ZIRShop__ctor_mCD7D1E6D5D623E74BBC514596C6A95023CB05313 (void);
+// 0x0000004D System.Void Zigzag.ZIRSkipIntro::Update()
+extern void ZIRSkipIntro_Update_m61A1A32A778351A1459693F62CDA9A2F4F947B08 (void);
+// 0x0000004E System.Void Zigzag.ZIRSkipIntro::SkipIntro()
+extern void ZIRSkipIntro_SkipIntro_mA7C02FBFF09A2546C07B2AC093BAED53B2106DE1 (void);
+// 0x0000004F System.Void Zigzag.ZIRSkipIntro::.ctor()
+extern void ZIRSkipIntro__ctor_m85AF0E4FD032FAFAD844B859F19A1CB750EAFF65 (void);
+// 0x00000050 System.Void Zigzag.ZIRSwitchObjects::Start()
+extern void ZIRSwitchObjects_Start_m18B9144CB7C10298E49699396ECFFCFAC73D50A1 (void);
+// 0x00000051 System.Void Zigzag.ZIRSwitchObjects::.ctor()
+extern void ZIRSwitchObjects__ctor_mDDE6F7A93F05B37365731F68ABD6C44EC833641E (void);
+// 0x00000052 System.Void Zigzag.ZIRTextByPlatform::Start()
+extern void ZIRTextByPlatform_Start_mCE3D5976C5A7631A4E527FFBF882FA2AE42AC089 (void);
+// 0x00000053 System.Void Zigzag.ZIRTextByPlatform::.ctor()
+extern void ZIRTextByPlatform__ctor_m078C861566E1BD6FA88EE14D8C05D5703949FE37 (void);
+// 0x00000054 System.Void Zigzag.Types.ItemDrop::.ctor()
+extern void ItemDrop__ctor_mFE4EF04A153BD9430E531FFA0970F700338C5319 (void);
+// 0x00000055 System.Void Zigzag.Types.ShopItem::.ctor()
+extern void ShopItem__ctor_m03345A20FB95A4927670578D298960ECD041B47C (void);
+// 0x00000056 System.Void Zigzag.Types.TouchFunction::.ctor()
+extern void TouchFunction__ctor_m7C7D44C565E7943BDAEBD907F71A71BECDC790CA (void);
+static Il2CppMethodPointer s_methodPointers[86] = 
+{
+	ZIRAnimateUI_Awake_mD78756B3B1297533ACEFA44E7AC1B6DF062B4926,
+	ZIRAnimateUI_Update_mC922651C078E9871DDE3F5ABA603E80D047D5599,
+	ZIRAnimateUI_OnEnable_mA0161FC65B32F3499E5444AB11D8FEAF02F55F64,
+	ZIRAnimateUI_PlayAnimation_m04A9EF6E05C440B9FE440BC66C6C7C3194C8EA33,
+	ZIRAnimateUI__ctor_mD97BF5E83FBFEFAE00CD204A993CC2FCD7A6103B,
+	ZIRGlobalMusic_Awake_m60A3D46333DF67DCB6AEB85AC7437162CC9BE888,
+	ZIRGlobalMusic_Start_mDA010FE9A43E4EFA46A5E472A72E1C04C6A2B70E,
+	ZIRGlobalMusic__ctor_m7D72A71D210B5D0059D87E77ED7B0B235A722071,
+	ZIRLoadLevel_Start_m1BC700DCF6E6012449DA92DB2173C19708A2CF86,
+	ZIRLoadLevel_LoadURL_m7E2885FB9CD2C18C7C524FA919616B82480B4F99,
+	ZIRLoadLevel_ExecuteLoadURL_m389CA5693B324BE0311AB99E7026891C8CA676B9,
+	ZIRLoadLevel_LoadLevel_m3CD2D1DA969935E6C8F917A149094DBD9CB1A7A9,
+	ZIRLoadLevel_ExecuteLoadLevel_m5A7C73D0569064BA782500593C5B5E807B27DB5F,
+	ZIRLoadLevel_RestartLevel_mB47B7E903FC50507EEE9DD8DEE44789C481C9A0D,
+	ZIRLoadLevel_ExecuteRestartLevel_m3A074188151DA61A0ED67D09BF261FA66DCF9778,
+	ZIRLoadLevel__ctor_m85447ECA617569451354E33D3C92EA0AF2442428,
+	ZIRSelectButton_OnEnable_mEAEFEB2D498542C32037BEFB9D4BB5FBA427EA16,
+	ZIRSelectButton__ctor_mFAD7296244BF0B0587F97D1B880C11391402317F,
+	ZIRToggleSound_Awake_m53C5A4C02A588CAB8915FD0D4FD780B9ACE7BA60,
+	ZIRToggleSound_SetSound_mA70473DF98881F2BA1F8737E063625AD49A81CE6,
+	ZIRToggleSound_ToggleSound_m53515F0EE02B4247DE179D2DC8FB4A9AFF9EEF15,
+	ZIRToggleSound_StartSound_m8516F6F0C0CB82D849AA6D373F9F5DFFD58EF634,
+	ZIRToggleSound__ctor_mD1363854E1DB4BC279028A370E8FAA77331DB399,
+	ZIRBlock_Start_mCFE94B04D81FDADE6955BF4AB6C3ED420C3B5E33,
+	ZIRBlock_OnTriggerEnter_m7085F1C4B47BD1558C4D98A0358BBC72999866E4,
+	ZIRBlock__ctor_mB58049AF125D0A0D0A1A064AC30863B3E912B3B3,
+	ZIRGameController_Awake_mF2BAB4CBD6F9FEB1631672841DE22660118FEC92,
+	ZIRGameController_Start_mDA5D21AD04DA0D4A381804567EC49151ABD3222A,
+	ZIRGameController_Update_m707E1540FE32A36D77BAC121373B26646DEE047A,
+	ZIRGameController_LateUpdate_mF8E3CFFD63593F59A9F10EABE8521EC39DF5DAAD,
+	ZIRGameController_createSection_mEC3E29B22CAA9F6147FED4984564C8E15AEF32E4,
+	ZIRGameController_ChangeScore_m763EFEE2945ED184D6843850323D700F14D6AEEF,
+	ZIRGameController_LevelUp_mC1692D7CA52B1F18BA6ED721F9E17A135F823E4A,
+	ZIRGameController_LevelUpEffect_m10EC64BB42DD3AA992B51195E4876E68FEDB7B9B,
+	ZIRGameController_Pause_mD919737E234834F3EAF0CFCBCB568DCCA9C35085,
+	ZIRGameController_Unpause_mCE144DE37AFB755A5628CAD5A0C1273F0551E16B,
+	ZIRGameController_GameOver_m6ADEEB6293E78A454CE7EBF0EAA2A8378B6E3C0B,
+	ZIRGameController_Victory_m71BA90CC0FEBAF6D9DD8898B7051E2D4E7D55934,
+	ZIRGameController_Restart_m078B7569D7749E5EA49E40483EA323E4CB56EFCC,
+	ZIRGameController_MainMenu_m74AC12C5AABEE7D16732B064D9C050BA6A3295ED,
+	ZIRGameController_SetPlayer_m251645CB9479EF062E1A7BC4326A19A50B4F539E,
+	ZIRGameController_TurnPlayer_mFC9E029D7FEECE2C79B08945B492B118D814C0AB,
+	ZIRGameController_OnDrawGizmos_m7D72699BEB152C41018C17EE4F09C7B202EAD447,
+	ZIRGameController__ctor_m6CA9CD9BB6CAFC62ECF58124CB187CAB0EF3082A,
+	U3CGameOverU3Ed__59__ctor_m3FF56122D3D9132A124CD9F44DFB2CF60994F884,
+	U3CGameOverU3Ed__59_System_IDisposable_Dispose_m976A68D4196BC0D3457B447EF63A92D3E84DEF8B,
+	U3CGameOverU3Ed__59_MoveNext_mBC39A49F19EA2548F98AB717D5E1D64CE152651B,
+	U3CGameOverU3Ed__59_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m065E4E7694BB39932E3450F274F83F4D1B1BFFF5,
+	U3CGameOverU3Ed__59_System_Collections_IEnumerator_Reset_m04118A5BBB696632CFF4093434350033B54DB3F7,
+	U3CGameOverU3Ed__59_System_Collections_IEnumerator_get_Current_m49255E2EAA83F25A947DA6B7EBDDA6CEE5A37C41,
+	ZIRLockRotation_Start_mA84E8D7263D176D853759B1B6B937CA1DF14C4DC,
+	ZIRLockRotation_LateUpdate_m35CC6271AB537041456DB02A8EAEB2AF516148B5,
+	ZIRLockRotation__ctor_m5937CEAE6517B972D6EE66DE026626BCC0C26BAB,
+	ZIRPlayer_Start_m3D3302E5ED04B6CC6A748E4FF9A9F9A9805A16E0,
+	ZIRPlayer_Update_m7660E32E9AC1BFAECC3A3EF558A4BBF3D0536CEE,
+	ZIRPlayer_Die_m7B0005E9F83D0872F5C6CED70EB0E0850B7071FD,
+	ZIRPlayer_Victory_m085BA3334CF896CF3208178B7C9256A174618847,
+	ZIRPlayer_SetTurn_mE06D3E3807CC9FEAE1B288DA08F5056CC7E6A2AF,
+	ZIRPlayer__ctor_m2C840BF7AF7B09B0D34D040278B96E9A719E42BF,
+	ZIRPlaySound_Start_m48784DC0755BA4C40BD7603E92986EEDAE09CA54,
+	ZIRPlaySound_PlaySound_mF46952002B78BEDBE0286E639C34724A6701B9D6,
+	ZIRPlaySound_PlaySound_mE74ED268BA7AD38F4442B00FC17A26FDDE0AC41F,
+	ZIRPlaySound_PlaySound_m41D7FA24FC3E1BB9E22788DF0EEF36A87E6BF899,
+	ZIRPlaySound__ctor_m51AA7FC4AE28B9D7CCCE44FE2C94F44C2AFA8B76,
+	ZIRRandomizeTransform_Start_m1BED656A9D012A168C60B108326F4D9EACD726F0,
+	ZIRRandomizeTransform__ctor_mBD987BD0CBF37ADAD210839A7E1187883317325C,
+	ZIRRemoveAfterDistance_Start_m087073C338456DF925723ADCB3FCDD230B2AA9AD,
+	ZIRRemoveAfterDistance_Update_m702755481FF17A85506BF8758CA84BE431DF9F39,
+	ZIRRemoveAfterDistance__ctor_m2093831C47E86F24947CE404CFD088FF27AD3B0D,
+	ZIRRemoveAfterTime_Update_m6E27A924773CA051F30550EB7A3D960A825E2AF8,
+	ZIRRemoveAfterTime__ctor_mAF7E84EBD1C032FAF0DA3519095E4A4C41701B5A,
+	ZIRShop_Start_m675ADEDE4344463793277A32FBFC346F726F9A92,
+	ZIRShop_UpdateItems_m1E107B2D425DAA839E92606348E408BF66A635F2,
+	ZIRShop_BuyItem_mB9FB412FC3B4436C8D3FDB8E8B7FA4CBA30235E0,
+	ZIRShop_SelectItem_m7612F5D8810ABC870C2344899A4606426DF3FB0C,
+	ZIRShop__ctor_mCD7D1E6D5D623E74BBC514596C6A95023CB05313,
+	ZIRSkipIntro_Update_m61A1A32A778351A1459693F62CDA9A2F4F947B08,
+	ZIRSkipIntro_SkipIntro_mA7C02FBFF09A2546C07B2AC093BAED53B2106DE1,
+	ZIRSkipIntro__ctor_m85AF0E4FD032FAFAD844B859F19A1CB750EAFF65,
+	ZIRSwitchObjects_Start_m18B9144CB7C10298E49699396ECFFCFAC73D50A1,
+	ZIRSwitchObjects__ctor_mDDE6F7A93F05B37365731F68ABD6C44EC833641E,
+	ZIRTextByPlatform_Start_mCE3D5976C5A7631A4E527FFBF882FA2AE42AC089,
+	ZIRTextByPlatform__ctor_m078C861566E1BD6FA88EE14D8C05D5703949FE37,
+	ItemDrop__ctor_mFE4EF04A153BD9430E531FFA0970F700338C5319,
+	ShopItem__ctor_m03345A20FB95A4927670578D298960ECD041B47C,
+	TouchFunction__ctor_m7C7D44C565E7943BDAEBD907F71A71BECDC790CA,
+};
+static const int32_t s_InvokerIndices[86] = 
+{
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	2633,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	2616,
+	2616,
+	3210,
+	3210,
+	3210,
+	3210,
+	2335,
+	3210,
+	3210,
+	3210,
+	2616,
+	3210,
+	3210,
+	3210,
+	2616,
+	3210,
+	3073,
+	3129,
+	3210,
+	3129,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	2616,
+	3210,
+	2663,
+	3210,
+	3210,
+	3210,
+	2616,
+	2633,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	2616,
+	2616,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+	3210,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	86,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};
