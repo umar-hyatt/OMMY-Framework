@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 namespace Ommy.FadeSystem
 {
-
     public class ScreenFader : MonoBehaviour
     {
         public static ScreenFader Instance;
@@ -17,6 +16,7 @@ namespace Ommy.FadeSystem
         }
         public Image fadeOverlay;
         public float fadeDuration = 1.0f;
+        public float fadeOutDely=1;
         private  Coroutine currentFadeCoroutine;
         private void Start()
         {
@@ -31,17 +31,17 @@ namespace Ommy.FadeSystem
         }
         public  void FadeIn()
         {
-            Instance.StartFadeCoroutine(1.0f, 0.0f);
+            StartFadeCoroutine(1.0f, 0.0f);
         }
         public  void FadeOut()
         {
-            Instance.StartFadeCoroutine(0.0f, 1.0f);
+            StartFadeCoroutine(0.0f, 1.0f);
         }
 
         public  void FadeInOut()
         {
-            Instance.StartFadeCoroutine(0.0f, 1.0f);
-            Instance.StartCoroutine(Instance.WaitAndStartFadeOut());
+            StartFadeCoroutine(0.0f, 1.0f);
+            StartCoroutine(WaitAndStartFadeOut());
         }
 
         private void StartFadeCoroutine(float startAlpha, float targetAlpha)
@@ -71,8 +71,8 @@ namespace Ommy.FadeSystem
 
         IEnumerator WaitAndStartFadeOut()
         {
-            //yield return new WaitForSeconds(fadeDuration);
             yield return currentFadeCoroutine;
+            yield return new WaitForSeconds(fadeOutDely);
             StartFadeCoroutine(1.0f, 0.0f);
         }
     }

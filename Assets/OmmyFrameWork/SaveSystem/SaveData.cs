@@ -3,6 +3,8 @@
 // in the Constructor => SaveData();
 using UnityEngine;
 using System.Collections.Generic;
+namespace Ommy.SaveData
+{
 public sealed class SaveData
 {
     //===================================================
@@ -74,3 +76,4 @@ public sealed class SaveData
     public void Reset() => _instance = new SaveData();
 
 }//class end
+}

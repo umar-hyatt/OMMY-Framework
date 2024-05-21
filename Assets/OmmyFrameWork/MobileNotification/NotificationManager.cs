@@ -4,42 +4,43 @@ using UnityEngine;
 using Unity.Notifications.Android;
 #endif
 using Unity.Notifications.iOS;
-
-public class NotificationManager : MonoBehaviour
+namespace Ommy.Notifications
 {
-    // Set the notification title and message here
-    public string title = "Daily Reminder";
-    [TextArea(3,6)]
-    public string message = "Don't forget to take a break!";
-
-    // Set the time for the daily notification here (in 24-hour format)
-    public int hour = 12;
-    public int minute = 0;
-    public int second = 0;
-
-    void Start()
+    public class NotificationManager : MonoBehaviour
     {
-        // Request permission to send notifications
-        RequestNotificationPermission();
+        // Set the notification title and message here
+        public string title = "Daily Reminder";
+        [TextArea(3, 6)]
+        public string message = "Don't forget to take a break!";
 
-        // Schedule the daily notification
-        ScheduleNotification();
-    }
+        // Set the time for the daily notification here (in 24-hour format)
+        public int hour = 12;
+        public int minute = 0;
+        public int second = 0;
 
-    void RequestNotificationPermission()
-    {
+        void Start()
+        {
+            // Request permission to send notifications
+            RequestNotificationPermission();
+
+            // Schedule the daily notification
+            ScheduleNotification();
+        }
+
+        void RequestNotificationPermission()
+        {
 #if UNITY_IOS
         //// Request permission to send notifications on iOS
         //var options = AuthorizationOption.Alert | AuthorizationOption.Badge;
         //iOSNotificationCenter.RequestAuthorization(options);
 #elif UNITY_ANDROID
-        // Request permission to send notifications on Android
-        //AndroidNotificationCenter.RequestPermission();
+            // Request permission to send notifications on Android
+            //AndroidNotificationCenter.RequestPermission();
 #endif
-    }
+        }
 
-    void ScheduleNotification()
-    {
+        void ScheduleNotification()
+        {
 #if UNITY_IOS
         // Create the notification trigger
         var trigger = new iOSNotificationTimeIntervalTrigger
@@ -62,26 +63,29 @@ public class NotificationManager : MonoBehaviour
         iOSNotificationCenter.ScheduleNotification(request);
 #elif UNITY_ANDROID
 
-        // Create the notification channel
-        var channel = new AndroidNotificationChannel {
-            Id = "daily_notification_channel",
-            Name = "Daily Notification",
-            Importance = Importance.High,
-            Description = "Daily reminder to take a break"
-        };
-        AndroidNotificationCenter.RegisterNotificationChannel(channel);
+            // Create the notification channel
+            var channel = new AndroidNotificationChannel
+            {
+                Id = "daily_notification_channel",
+                Name = "Daily Notification",
+                Importance = Importance.High,
+                Description = "Daily reminder to take a break"
+            };
+            AndroidNotificationCenter.RegisterNotificationChannel(channel);
 
-        // Create the notification
-        var notification = new AndroidNotification {
-            Title = title,
-            Text = message,
-            SmallIcon = "notification_icon",
-            LargeIcon = "app_icon",
-            FireTime = DateTime.Now.AddHours(hour).AddMinutes(minute)
-        };
+            // Create the notification
+            var notification = new AndroidNotification
+            {
+                Title = title,
+                Text = message,
+                SmallIcon = "notification_icon",
+                LargeIcon = "app_icon",
+                FireTime = DateTime.Now.AddHours(hour).AddMinutes(minute)
+            };
 
-        // Schedule the notification
-        AndroidNotificationCenter.SendNotification(notification, channel.Id);
+            // Schedule the notification
+            AndroidNotificationCenter.SendNotification(notification, channel.Id);
 #endif
+        }
     }
 }
