@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Ommy.FadeSystem;
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class UIManagerDemo : MonoBehaviour
 {
     public GameObject[] panels;
     public void ActivePanel(int index)

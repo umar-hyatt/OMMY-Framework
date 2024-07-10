@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using System;
-namespace Ommy.UIAnimation
+namespace Ommy.Tweener
 {
-    public class UIAnimationController : MonoBehaviour
+    public class Tweener : MonoBehaviour
     {
         public UIAnimation levelSelectionAnimation;
         public void PlayLevelSelectionAnimation()
