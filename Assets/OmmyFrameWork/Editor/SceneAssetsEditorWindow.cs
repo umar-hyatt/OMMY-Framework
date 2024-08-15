@@ -1,8 +1,8 @@
-// Ommy.Editor
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 using UnityEditor.SceneManagement;
+
 namespace Ommy.Editor.SceneManagement
 {
     [InitializeOnLoad]
@@ -12,7 +12,9 @@ namespace Ommy.Editor.SceneManagement
         {
             SceneView.duringSceneGui += OnSceneGUI;
         }
+
         static bool abc = true;
+
         private static void OnSceneGUI(SceneView sceneView)
         {
             Handles.BeginGUI();
@@ -31,12 +33,20 @@ namespace Ommy.Editor.SceneManagement
                     var sceneAsset = AssetDatabase.LoadAssetAtPath<SceneAsset>(scene.path);
                     if (sceneAsset != null)
                     {
-                        GUILayout.BeginVertical(GUILayout.Width(20)); 
+                        GUILayout.BeginVertical(GUILayout.Width(20));
                         if (GUILayout.Button(EditorGUIUtility.IconContent("d_SceneAsset Icon"), GUILayout.Width(30), GUILayout.Height(30)))
                         {
-                            OpenScene(sceneAsset);
+                            Event e = Event.current;
+                            if (e.button == 0) // Left click
+                            {
+                                OpenScene(sceneAsset, false);
+                            }
+                            else if (e.button == 1) // Right click
+                            {
+                                OpenScene(sceneAsset, true);
+                            }
                         }
-                        GUILayout.Label(sceneAsset.name, GUILayout.Width(30), GUILayout.Height(20)); 
+                        GUILayout.Label(sceneAsset.name, GUILayout.Width(30), GUILayout.Height(20));
 
                         GUILayout.EndVertical();
                     }
@@ -44,19 +54,24 @@ namespace Ommy.Editor.SceneManagement
             }
 
             EditorGUILayout.EndHorizontal();
-            //GUILayout.EndArea();
-
             Handles.EndGUI();
         }
 
-        private static void OpenScene(SceneAsset sceneAsset)
+        private static void OpenScene(SceneAsset sceneAsset, bool additive)
         {
             if (sceneAsset != null)
             {
                 string scenePath = AssetDatabase.GetAssetPath(sceneAsset);
                 if (!string.IsNullOrEmpty(scenePath))
                 {
-                    EditorSceneManager.OpenScene(scenePath);
+                    if (additive)
+                    {
+                        EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Additive);
+                    }
+                    else
+                    {
+                        EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);
+                    }
                 }
             }
         }
