@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/OmmyFrameWork/Scene/Demo.unity
+    path: Assets/OmmyFrameWork/Scene/OmmyFrameworkDemo.unity
     guid: 07e8f80ce41f34211b236ca413dc2b2c
+  - enabled: 1
+    path: Assets/OmmyFrameWork/Scene/Notification.unity
+    guid: db774535ad98340b9a799c728444b1f5
   m_configObjects: {}

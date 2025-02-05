@@ -3,7 +3,9 @@ using UnityEngine;
 #if UNITY_ANDROID
 using Unity.Notifications.Android;
 #endif
+#if UNITY_IOS
 using Unity.Notifications.iOS;
+#endif
 namespace Ommy.Notifications
 {
     public class NotificationManager : MonoBehaviour
